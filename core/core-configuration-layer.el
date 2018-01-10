@@ -1,7 +1,7 @@
 ;; -*- nameless-current-name: "configuration-layer" -*-
 ;;; core-configuration-layer.el --- Spacemacs Core File
 ;;
-;; Copyright (c) 2012-2017 Sylvain Benner & Contributors
+;; Copyright (c) 2012-2018 Sylvain Benner & Contributors
 ;;
 ;; Author: Sylvain Benner <sylvain.benner@gmail.com>
 ;; URL: https://github.com/syl20bnr/spacemacs
@@ -451,6 +451,7 @@ cache folder.")
   (let ((path (cdr archive)))
     (or (string-match-p "http" path)
         (string-prefix-p "~" path)
+        (eq (string-match-p "^[a-zA-Z]:" path) 0)
         (string-prefix-p "/" path))))
 
 (defun configuration-layer//package-archive-local-path-p (archive)
@@ -458,6 +459,7 @@ cache folder.")
   (let ((path (cdr archive)))
     (or (string-prefix-p "~" path)
         (string-prefix-p "/" path)
+        (eq (string-match-p "^[a-zA-Z]:" path) 0)
         (string-prefix-p "\." path))))
 
 (defun configuration-layer//resolve-package-archives (archives)

@@ -1,6 +1,6 @@
 ;;; keybindings.el --- Spacemacs Base Layer key-bindings File
 ;;
-;; Copyright (c) 2012-2017 Sylvain Benner & Contributors
+;; Copyright (c) 2012-2018 Sylvain Benner & Contributors
 ;;
 ;; Author: Sylvain Benner <sylvain.benner@gmail.com>
 ;; URL: https://github.com/syl20bnr/spacemacs
@@ -127,6 +127,7 @@
   "bd"    'spacemacs/kill-this-buffer
   "be"    'spacemacs/safe-erase-buffer
   "bh"    'spacemacs/home
+  "bH"    'spacemacs/switch-to-help-buffer
   "b C-d" 'spacemacs/kill-other-buffers
   "b C-S-d" 'spacemacs/kill-matching-buffers-rudely
   "bn"    'next-buffer
@@ -442,7 +443,8 @@
   "w/"  'split-window-right
   "w="  'balance-windows-area
   "w+"  'spacemacs/window-layout-toggle
-  "w_"  'spacemacs/maximize-horizontally)
+  "w_"  'spacemacs/maximize-horizontally
+  "w|"  'spacemacs/maximize-vertically)
 ;; text -----------------------------------------------------------------------
 (defalias 'count-region 'count-words-region)
 

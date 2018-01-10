@@ -1,6 +1,6 @@
 ;;; packages.el --- Github Layer packages File for Spacemacs
 ;;
-;; Copyright (c) 2012-2017 Sylvain Benner & Contributors
+;; Copyright (c) 2012-2018 Sylvain Benner & Contributors
 ;;
 ;; Author: Sylvain Benner <sylvain.benner@gmail.com>
 ;; URL: https://github.com/syl20bnr/spacemacs
@@ -75,8 +75,8 @@
     :pre-config
     (progn
       (use-package magit-gh-pulls
-        :init (define-key magit-mode-map "#" 'spacemacs/load-gh-pulls-mode)
         :config
+        (define-key magit-mode-map "#" 'spacemacs/load-gh-pulls-mode)
         (spacemacs|diminish magit-gh-pulls-mode "Github-PR")))))
 
 (defun github/init-magithub ()

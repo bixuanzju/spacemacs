@@ -1,6 +1,6 @@
 ;;; core-dotspacemacs.el --- Spacemacs Core File
 ;;
-;; Copyright (c) 2012-2017 Sylvain Benner & Contributors
+;; Copyright (c) 2012-2018 Sylvain Benner & Contributors
 ;;
 ;; Author: Sylvain Benner <sylvain.benner@gmail.com>
 ;; URL: https://github.com/syl20bnr/spacemacs
@@ -649,8 +649,8 @@ If ARG is non nil then Ask questions to the user before installing the dotfile."
               ?n "%n"
               ?z "%z"
               ?Z "%Z"
-              ?[ "%["
-              ?] "%]"
+              ?\[ "%["
+              ?\] "%]"
               ?% "%%"
               ?- "%-"
               )))
